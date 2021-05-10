@@ -9,6 +9,13 @@
             href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
         />
         <script>
+				function cerrar(){
+					const velo = document.getElementById("velo")
+					velo.style.display = 'none'
+
+					const popup = document.getElementById("popup")
+					popup.style.display = 'none'
+				}
             function calcVH() {
                 document
                     .querySelector(':root')
@@ -23,10 +30,10 @@
 		  <div id='velo' class='velo'></div>
 		  <div id='popup' class='popup'>
 				<div class='popupflextitle'>
-					<span class='titulo'>la casa blanca</span>
+					<span class='titulo'>Guardado exitosamente</span>
 				</div>
 				<div class='popupflexbutton'>
-					<button class='botonPopUp'>Aceptar</button>
+					<button class='botonPopUp' onClick='cerrar()'>Aceptar</button>
 				</div>
 			</div>
         <nav class="header">

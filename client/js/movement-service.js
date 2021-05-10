@@ -32,7 +32,13 @@ async function create(movement) {
         },
         body: JSON.stringify(movement),
     });
-	 alert ('Agregado')
+	 //alert ('Agregado')
+	 const velo = document.getElementById("velo")
+	 velo.style.display = 'block'
+
+	 const popup = document.getElementById("popup")
+	 popup.style.display = 'flex'
+	
     return resp.json();
 }
 

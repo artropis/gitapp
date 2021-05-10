@@ -132,7 +132,7 @@ html {
     }
 }
 div.velo {
-	display: block;
+	display: none; /* cuando es visible es block */
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -143,10 +143,10 @@ div.velo {
 	z-index: 2000;
 }
 div.popup{
-	display: flex;
+	display: none; /* cuando es visible es flex */
 	flex-direction: column;
 	position: absolute;
-	background-color:  red;
+	background-color: #565596;
 	left:35%;
 	top:30%;
 	width:500px;
@@ -155,12 +155,10 @@ div.popup{
 }
 div.popupflextitle{
 	padding: 10px;
-	background-color:green;
 	flex: 1 1;
 }
 div.popupflexbutton{
 	display:flex;
-	background-color:blue;
 	flex: initial;
 	height: 60px;
 	justify-content: center;
