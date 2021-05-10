@@ -32,7 +32,7 @@ async function create(movement) {
         },
         body: JSON.stringify(movement),
     });
-
+	 alert ('Agregado')
     return resp.json();
 }
 
